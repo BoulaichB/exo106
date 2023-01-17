@@ -12,5 +12,13 @@
 
 // ### 2. Trouve le moyen d'afficher l'élément dans la console.log grace a la propriété target
 
-
 // ### 3. Change ton console.log par une instruction qui permet de mettre sur l'élément un border red et observe en cliquant sur les éléments de ta page ce qu'il se passe
+
+let content = document.getElementById('content');
+function fonction(e){
+    console.log(e);
+    console.log(e.target);
+    e.target.style.border = "1px solid red";
+}
+
+content.addEventListener('click', fonction);
